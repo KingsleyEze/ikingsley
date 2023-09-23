@@ -1,0 +1,44 @@
+:root {
+    --color-bg-dark-hsl: 233,8%,11%;
+    --color-primary-hsl: 240, 100%, 50%;
+}
+
+body {
+    background-color: hsl(var(--color-bg-dark-hsl));
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.status {
+    width: 50%;
+     color: var(--color-primary-hsl);
+}
+
+.image {
+    width: 50%;
+    height: inherit;
+}
+
+.message {
+    position: relative;
+    top: 20vh;
+}
+
+
+
+
+.image img {
+    position: relative;
+    top: 20vh;
+    height: 50vh;
+    max-width: 100%;
+    object-fit:fill;
+    mix-blend-mode: luminosity;
+    border-radius:  10px;
+}
