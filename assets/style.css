@@ -16,6 +16,8 @@ body {
 }
 
 .status {
+    display: flex;
+    justify-content: flex-end;
     width: 50vw;
     color: hsl(var(--color-primary-hsl));
 }
@@ -37,8 +39,10 @@ body {
 }
 
 .image {
+    display: flex;
     width: 50vw;
     height: inherit;
+    justify-content: center;
 }
 
 .message {
