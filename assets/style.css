@@ -1,6 +1,6 @@
 :root {
     --color-bg-dark-hsl: 233,8%,11%;
-    --color-primary-hsl: 240, 100%, 50%;
+    --color-primary-hsl: 240, 100%, 64%;
 }
 
 body {
@@ -16,12 +16,28 @@ body {
 }
 
 .status {
-    width: 50%;
-     color: var(--color-primary-hsl);
+    width: 50vw;
+    color: hsl(var(--color-primary-hsl));
+}
+
+.status h1 {
+    color: aliceblue;
+}
+
+.status h2 {
+    font-size: 5rem;;
+}
+
+.status p {
+    position: relative;
+    top: -60px;
+    color:aquamarine;
+    left: 10px;
+    font-size: 1.7rem;;
 }
 
 .image {
-    width: 50%;
+    width: 50vw;
     height: inherit;
 }
 
@@ -36,7 +52,7 @@ body {
 .image img {
     position: relative;
     top: 20vh;
-    height: 50vh;
+    height: 60vh;
     max-width: 100%;
     object-fit:fill;
     mix-blend-mode: luminosity;
