@@ -78,12 +78,25 @@ body {
         width: 100vw;
     }
 
+    .status h2 {
+        font-size: 3rem;;
+    }
+
+    .status p {
+        position: relative;
+        top: -40px;
+        color:aquamarine;
+        left: 10px;
+        font-size: 1.2rem;;
+    }
+
     .image {
         width: 100vw;
         justify-content: center;
     }
 
     .image > img {
+        height: 50vh;
         width: 100vw;
     }
 }
