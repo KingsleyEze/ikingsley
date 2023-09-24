@@ -10,20 +10,30 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
     height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
 }
 
 .status {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     width: 50vw;
     color: hsl(var(--color-primary-hsl));
 }
 
-.status h1 {
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     color: aliceblue;
+    margin-bottom: 140px;
 }
 
 .status h2 {
@@ -45,20 +55,35 @@ body {
     justify-content: center;
 }
 
-.status .message {
-    position: relative;
-    top: 20vh;
-}
-
-
-
-
 .image > img {
-    position: relative;
-    top: 20vh;
     height: 60vh;
     max-width: 100%;
     object-fit: fill;
     mix-blend-mode: luminosity;
     border-radius:  10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .title {
+        margin-bottom: 0;
+    }
+
+    .status {
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .image {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .image > img {
+        width: 100vw;
+    }
 }
