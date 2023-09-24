@@ -58,7 +58,7 @@ body {
     top: 20vh;
     height: 60vh;
     max-width: 100%;
-    object-fit:fill;
+    object-fit: fill;
     mix-blend-mode: luminosity;
     border-radius:  10px;
 }
