@@ -57,7 +57,7 @@ body {
 
 .image > img {
     height: 60vh;
-    max-width: 100%;
+    max-width: 95%;
     object-fit: fill;
     mix-blend-mode: luminosity;
     border-radius:  10px;
