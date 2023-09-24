@@ -45,7 +45,7 @@ body {
     justify-content: center;
 }
 
-.message {
+.status .message {
     position: relative;
     top: 20vh;
 }
